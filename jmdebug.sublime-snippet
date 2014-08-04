@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+	<jdoc:include type="modules" name="debug" style="none" />
+]]></content>
+	<tabTrigger>jmdebug</tabTrigger>
+	<scope>source.php</scope>
+	<description>Joomla module debug</description>
+</snippet>

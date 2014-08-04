@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<?php if ($this->countModules('${1:name-position}')) : ?>
+<div id="${2:}" class="${3:}">
+	<jdoc:include type="modules" name="${4:name-position}" style="${5:xhtml}" />
+</div>
+<?php endif; ?>
+]]></content>
+	<tabTrigger>jmodule</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

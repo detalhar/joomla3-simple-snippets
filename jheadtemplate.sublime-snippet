@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  Templates.${1:protostar}
+ *
+ * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+
+\$app       = JFactory::getApplication();
+\$doc       = JFactory::getDocument();
+\$sitename 	= \$app->get('sitename');
+
+// Add JavaScript Frameworks.
+JHtml::_('bootstrap.framework');
+
+// Load optional rtl Bootstrap css and Bootstrap bugfixes.
+JHtmlBootstrap::loadCss(false, \$this->direction);
+
+// Add Stylesheet.
+\$this->addStyleSheet('templates/' . '/css/jui/bootstrap.min.css');
+\$doc->addStyleSheet('templates/' . $this->template . '/css/${2:template}.css');
+
+?>
+]]></content>
+		<tabTrigger>jheadtemplate</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

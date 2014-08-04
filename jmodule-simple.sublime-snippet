@@ -1,0 +1,10 @@
+<snippet>
+	<description>Simple joomla module</description>
+	<content><![CDATA[
+	<div class="${1:}">
+		<jdoc:include type="modules" name="${2:nome-da-posicao}" style="${3:none}" />
+	</div>
+]]></content>
+	<tabTrigger>jmodule-simple</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

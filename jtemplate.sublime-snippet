@@ -1,0 +1,53 @@
+<snippet>
+	<description>Simple starter Joomla Template</description>
+	<content><![CDATA[
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  Templates.${1:protostar}
+ *
+ * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+
+\$app       = JFactory::getApplication();
+\$doc       = JFactory::getDocument();
+\$sitename 	= \$app->get('sitename');
+
+// Add JavaScript Frameworks.
+JHtml::_('bootstrap.framework');
+
+// Load optional rtl Bootstrap css and Bootstrap bugfixes.
+JHtmlBootstrap::loadCss(false, \$this->direction);
+
+// Add Stylesheet.
+\$this->addStyleSheet('templates/' . '/css/jui/bootstrap.min.css');
+\$doc->addStyleSheet('templates/' . $this->template . '/css/${2:template}.css');
+
+?>
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<jdoc:include type="head" />
+	<!--[if lt IE 9]>
+		<script src="<?php echo \$this->baseurl; ?>/media/jui/js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<main id="${3:content}" role="main" class="${4:}">
+		<!-- Begin Content -->
+		<jdoc:include type="message" />
+		<jdoc:include type="component" />
+	</main>
+</body>
+</html>
+
+]]></content>
+	<tabTrigger>jtemplate</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

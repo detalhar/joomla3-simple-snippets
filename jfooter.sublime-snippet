@@ -1,0 +1,9 @@
+<snippet>
+	<description></description>
+	<content><![CDATA[
+<footer class="footer">
+	<jdoc:include type="modules" name="footer" style="${1:none}" />
+</footer>]]></content>
+	<tabTrigger>jfooter</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

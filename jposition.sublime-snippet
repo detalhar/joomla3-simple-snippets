@@ -1,0 +1,6 @@
+<snippet>
+	<description>Add Copyright</description>
+	<content><![CDATA[<position>${1:name-position}</position>]]></content>
+	<tabTrigger>jposition</tabTrigger>
+	<scope>text.xml</scope>
+</snippet>

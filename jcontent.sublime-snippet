@@ -1,0 +1,12 @@
+<snippet>
+	<description></description>
+	<content><![CDATA[
+	<div id="${1:content}" class="${2:}">
+		<!-- Begin Content -->
+		<jdoc:include type="message" />
+		<jdoc:include type="component" />
+		<!-- End Content -->
+	</div>]]></content>
+	<tabTrigger>jcontent</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
