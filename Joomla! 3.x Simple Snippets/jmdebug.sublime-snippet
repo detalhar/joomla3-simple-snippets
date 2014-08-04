@@ -3,6 +3,6 @@
 	<jdoc:include type="modules" name="debug" style="none" />
 ]]></content>
 	<tabTrigger>jmdebug</tabTrigger>
-	<scope>source.php</scope>
+	<scope>text.html</scope>
 	<description>Joomla module debug</description>
 </snippet>
