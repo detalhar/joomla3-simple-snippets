@@ -1,7 +1,7 @@
 <snippet>
 	<description>Add Copyright</description>
 	<content><![CDATA[
-<p>&copy; Copyright <?php echo date('Y'); ?> - Todos os direitos reservados para <?php echo $sitename; ?></p>]]></content>
+<p>&copy; Copyright <?php echo date('Y'); ?> - Todos os direitos reservados para <?php echo \$sitename; ?></p>]]></content>
 	<tabTrigger>jcopy</tabTrigger>
 	<scope>text.html</scope>
 </snippet>
