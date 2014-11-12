@@ -1,0 +1,53 @@
+<snippet>
+	<content><![CDATA[
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	color: #fff;
+	background: #e76c0f;
+	font-family: 'robotolight';
+	font-weight: normal;
+	text-align: center;
+}
+a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.error {
+	position: relative;
+	margin: 0 auto;
+	top:50px;
+	text-align: center;
+}
+.error h1 {
+	font-size: 200px;
+	letter-spacing: -10px;
+	margin: 0;
+	padding: 0;
+}
+
+.error h2 {
+	font-size: 50px;
+}
+.error h3 {
+	font-size: 15px;
+}
+
+#rodape {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	left: 0;
+	bottom:0;
+}
+]]></content>
+<tabTrigger>jerror-css</tabTrigger>
+<scope>source.css</scope>
+</snippet>
