@@ -3,11 +3,11 @@
 	<content><![CDATA[
 <?php
 /**
- * @package     Joomla.Site
- * @subpackage  Templates.${1:protostar}
+ * @package
+ * @subpackage
  *
- * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright
+ * @license
  */
 
 defined('_JEXEC') or die;
@@ -25,7 +25,7 @@ JHtmlBootstrap::loadCss(false, \$this->direction);
 // Add Stylesheet.
 \$this->addStyleSheet('templates/' . '/css/jui/bootstrap.min.css');
 \$doc->addStyleSheet('templates/system/css/system.css');
-\$doc->addStyleSheet('templates/' . \$this->template . '/css/${2:template}.css');
+\$doc->addStyleSheet('templates/' . \$this->template . '/css/${1:template}.css');
 
 
 ?>
@@ -41,7 +41,7 @@ JHtmlBootstrap::loadCss(false, \$this->direction);
 	<![endif]-->
 </head>
 <body>
-	<main id="${3:content}" role="main" class="${4:}">
+	<main role="main" class="${2:}">
 		<!-- Begin Content -->
 		<jdoc:include type="message" />
 		<jdoc:include type="component" />
