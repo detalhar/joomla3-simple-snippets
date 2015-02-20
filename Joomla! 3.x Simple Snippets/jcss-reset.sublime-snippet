@@ -417,9 +417,6 @@ td,
 th {
 padding: 0;
 }
-body {
-border-top: 5px solid #dcdcdc;
-}
 .f-left {
 float: left;
 }
